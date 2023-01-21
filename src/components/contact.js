@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 function Contact() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1200 });
   }, []);
   return (
     <div>
@@ -20,12 +20,12 @@ function Contact() {
 
         <div className="contactSection" id="contactSection">
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
-            data-aos-once="true"
+            data-aos-once="false"
             className="contactText">
-            <p>Have an idea ?</p>
+            {/* <p>Have an idea ?</p> */}
             <h3>LET'S TALK</h3>
           </div>
 

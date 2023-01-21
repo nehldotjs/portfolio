@@ -38,6 +38,7 @@ function Nav() {
         </button>
       </div>
       <div
+        onClick={navToggle}
         className={activeNav ? "navMobileLinks activateNav" : "navMobileLinks"}>
         <div className="mobileLinks">
           <a href="#home" className="mobileNavLink">

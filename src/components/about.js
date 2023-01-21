@@ -69,7 +69,7 @@ function About() {
                           my work.
                         </p>
                         <div
-                          data-aos="flip-left"
+                          data-aos="flip-up"
                           data-aos-offset="150"
                           data-aos-easing="ease-in-out"
                           data-aos-once="false"
@@ -104,7 +104,7 @@ function About() {
                         </div>
                         <hr />
                         <div
-                          data-aos="slide-left"
+                          data-aos="slide-down"
                           data-aos-offset="150"
                           data-aos-easing="ease-in-out"
                           data-aos-once="false"
