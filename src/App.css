@@ -1248,7 +1248,7 @@ footer h3 .f-logo {
     z-index: 1001;
     padding: 5px;
     height: 50px;
-    width: 40px;
+    width: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1782,7 +1782,6 @@ footer h3 .f-logo {
   .services .services-container .s-line {
     display: flex;
     margin: auto;
-    z-index: 10;
     top: 0px;
     left: 0px;
     position: absolute;
