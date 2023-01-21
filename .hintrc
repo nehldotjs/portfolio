@@ -3,14 +3,6 @@
     "development"
   ],
   "hints": {
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "-webkit-backdrop-filter",
-          "scroll-behavior"
-        ]
-      }
-    ]
+    "compat-api/css": "off"
   }
 }
