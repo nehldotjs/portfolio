@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nehl/static/css/main.8473bd2a.css",
-    "main.js": "/nehl/static/js/main.1cb755ed.js",
+    "main.css": "/nehl/static/css/main.c03eda1f.css",
+    "main.js": "/nehl/static/js/main.e632550b.js",
     "static/js/787.39f10b48.chunk.js": "/nehl/static/js/787.39f10b48.chunk.js",
     "static/media/img1.png": "/nehl/static/media/img1.b92dcb1bc5bd57fec99f.png",
     "static/media/workstation.jpg": "/nehl/static/media/workstation.c6c7e52f998db761b7cf.jpg",
@@ -9,12 +9,12 @@
     "static/media/doodle.png": "/nehl/static/media/doodle.c01b0089d2c4bb288d29.png",
     "static/media/nel-art.png": "/nehl/static/media/nel-art.d1098e9dbf687140ce3c.png",
     "index.html": "/nehl/index.html",
-    "main.8473bd2a.css.map": "/nehl/static/css/main.8473bd2a.css.map",
-    "main.1cb755ed.js.map": "/nehl/static/js/main.1cb755ed.js.map",
+    "main.c03eda1f.css.map": "/nehl/static/css/main.c03eda1f.css.map",
+    "main.e632550b.js.map": "/nehl/static/js/main.e632550b.js.map",
     "787.39f10b48.chunk.js.map": "/nehl/static/js/787.39f10b48.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8473bd2a.css",
-    "static/js/main.1cb755ed.js"
+    "static/css/main.c03eda1f.css",
+    "static/js/main.e632550b.js"
   ]
 }
