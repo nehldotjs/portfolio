@@ -51,7 +51,9 @@ function Projects() {
                             case
                           </Link>
                           {liveLink && (
-                            <a href={"https://" + liveLink} className="projectLink">
+                            <a
+                              href={"https://" + liveLink}
+                              className="projectLink">
                               Live
                             </a>
                           )}

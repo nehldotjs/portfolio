@@ -23,7 +23,7 @@ function Contact() {
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
-            data-aos-once="false"
+            data-aos-once="true"
             className="contactText">
             {/* <p>Have an idea ?</p> */}
             <h3>LET'S TALK</h3>

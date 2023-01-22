@@ -72,7 +72,7 @@ function Hero() {
             <a href="https://twitter.com/nehlzin" title="twitter">
               <FaTwitter />
             </a>
-            <a href="https://github.com/nehlzin" title="github">
+            <a href="https://github.com/nehldotjs" title="github">
               <FaGithubAlt />
             </a>
             <a href="https://dribbble.com/nehlzin" title="dribbble">

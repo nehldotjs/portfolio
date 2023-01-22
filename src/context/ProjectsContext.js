@@ -27,15 +27,15 @@ function ProjectsContext(props) {
         {
           name: "John Doe",
           age: "99",
-          img: test1,
+          img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
           fasutration:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Unde, a!",
           goal: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, a!",
         },
         {
-          name: "John Doe",
+          name: "Helen Doe",
           age: "88",
-          img: test1,
+          img: "https://images.pexels.com/photos/1559086/pexels-photo-1559086.jpeg?auto=compress&cs=tinysrgb&w=600",
           fasutration:
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Unde, a!",
           goal: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, a!",
@@ -45,7 +45,7 @@ function ProjectsContext(props) {
       sketches: null,
       wireFrame: null,
       finalDesign: null,
-      liveLink: "Facebook.com",
+      liveLink: null,
       color: null,
     },
   ];
