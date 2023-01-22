@@ -63,15 +63,12 @@
 
 .projectBorder {
     height: auto;
-    width: aut;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5px 20px;
     justify-content: center;
     border-radius: 3px;
-    -webkit-backdrop-filter: blur(5px);
-
-
+    margin: auto;
 }
 
 .projectBorder h5 {
@@ -157,27 +154,90 @@
     border-left: 1px solid #8f8f8f;
 }
 
-.finalDesignWrapper {
+.projectLink {
+    display: flex;
+    margin: auto;
+}
+
+.projectLink .link {
+    color: white;
+    display: flex;
+}
+
+.projectLink .link .linksIcon {
+    height: 20px;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+
+.imagesWrapper .case-finaldesign img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+
+}
+
+.coloImageW {
+    height: auto;
+    width: 50%;
+    display: flex;
+}
+
+.coloImageW img {
+    display: flex;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.case-imgeWrapper {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
-.finalDesignWrapper .finalDesignWrapper-img {
-    height: auto;
-    width: 200px;
+.case-image {
     display: flex;
+    height: auto;
+    width: 120px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.case-image img{
+    object-fit: contain;
+    margin: auto;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.case-mockupimage{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.mockupimage {
+    display: flex;
+    height: auto;
+    width: 100%;
     margin: auto;
     justify-content: center;
     align-items: center;
 }
 
-.finalDesignWrapper .finalDesignWrapper-img img {
+.case-mockupimage .mockup {
+    object-fit: center;
+    margin: auto;
     height: 100%;
     width: 100%;
-    display: flex;
-    margin: auto;
-    object-fit: contain;
-
 }

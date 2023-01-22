@@ -40,6 +40,7 @@
 body {
   position: relative;
   background-color: var(--bckgrnd-color);
+  background-color: #0000008d;
   color: white;
 }
 
@@ -1262,6 +1263,7 @@ footer h3 .f-logo {
     overflow: unset;
     -webkit-backdrop-filter: blur(5px);
     border-radius: 5px;
+    border: .5 solid white;
   }
 
   .mobileHamburgerMenu .hamLine {
@@ -1274,11 +1276,11 @@ footer h3 .f-logo {
     align-items: center;
     justify-content: center;
     transition: all 1.5s ease;
+    background-color: orangered;
   }
 
   .line1 {
     transform: translateX(50%);
-    background-color: white;
   }
 
   .navMobileLinks {

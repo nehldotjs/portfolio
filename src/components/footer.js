@@ -6,8 +6,8 @@ function Footer() {
       <footer>
         <div className="footer">
           <h3>
-            All Right Reserved © 2022 |<span className="f-logo"> NEHL </span>{" "}
-            ---Chopped and styled by
+            © 2023 |<span className="f-logo"> NEHL  </span> ---Designed and
+            styled by
             <span>ME!</span>
           </h3>
         </div>

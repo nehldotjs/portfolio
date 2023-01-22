@@ -42,7 +42,7 @@ function About() {
                       data-aos="slide-down"
                       data-aos-offset="150"
                       data-aos-easing="ease-in-out"
-                      data-aos-once="false"
+                      data-aos-once="true"
                       className="about-h3 aboutLeftAnimation">
                       hello!
                       <span>
@@ -56,17 +56,18 @@ function About() {
                           data-aos="slide-up"
                           data-aos-offset="150"
                           data-aos-easing="ease-in-out"
-                          data-aos-once="false"
+                          data-aos-once="true"
                           className="aboutRightAnimation">
-                          I'm a FrontEnd Developer and Graphic Designer from
-                          Nigeria who is self-taught. I take great pleasure in
-                          creating user experiences that are accessible to all.
-                          My interest in Designing started in 2019 and I've made
-                          noticeable progress since then. Designing for me is
-                          more than just visual presentation, it's a way of
-                          life. With the right amount of inspiration and
-                          dedication, I'm able to make a lasting impression with
-                          my work.
+                          I'm a self-taught <strong>Frontend developer</strong>{" "}
+                          and <strong>Graphic designer</strong> who has been in
+                          the tech industry for over a year and I'm loving it!
+                          To me, designing is a lifestyle, and I enjoy creating
+                          unique designs for users that can make their digital
+                          experience more enjoyable. I'm also a big fan of good
+                          music - it's my way of unwinding and feeling inspired
+                          while coding. With my self-taught skills and passion
+                          for design, music, and coding, I'm sure to bring a
+                          unique and creative vibe to any development team.
                         </p>
                         <div
                           data-aos="flip-up"
@@ -86,16 +87,16 @@ function About() {
                         Skill set:
                       </h3>
                       <div
-                        data-aos="fade-up"
+                        data-aos="slide-up"
                         data-aos-offset="150"
                         data-aos-easing="ease-in-out"
                         data-aos-once="false"
                         className="experiences">
                         <div
-                          data-aos="slide-up"
+                          data-aos="slide-down"
                           data-aos-offset="150"
                           data-aos-easing="ease-in-out"
-                          data-aos-once="false"
+                          data-aos-once="true"
                           className="code aboutLeftAnimation">
                           <a href="##">HTML / Css</a>
                           <a href="##">javaScript (ES6+)</a>
@@ -107,7 +108,7 @@ function About() {
                           data-aos="slide-down"
                           data-aos-offset="150"
                           data-aos-easing="ease-in-out"
-                          data-aos-once="false"
+                          data-aos-once="true"
                           className="software aboutRightAnimation">
                           <a href="##">FIGMA</a>
                           <a href="##">After Effect</a>

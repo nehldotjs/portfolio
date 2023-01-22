@@ -33,7 +33,9 @@ function Nav() {
           type="button"
           className="mobileHamburgerMenuBtn"
           onClick={navToggle}>
-          <div className="hamLine line1" id="hamline1"></div>
+          <div
+            className={!activeNav ? "hamLine line1" : "hamLine"}
+            id="hamline1"></div>
           <div className="hamLine" id="hamline2"></div>
         </button>
       </div>

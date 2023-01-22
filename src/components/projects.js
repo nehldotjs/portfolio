@@ -52,7 +52,7 @@ function Projects() {
                           </Link>
                           {liveLink && (
                             <a
-                              href={"https://" + liveLink}
+                              href={liveLink}
                               className="projectLink">
                               Live
                             </a>

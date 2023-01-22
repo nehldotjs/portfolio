@@ -2,27 +2,31 @@ import React, { createContext, useState } from "react";
 
 import workstation1 from "../assets/workstation.jpg";
 import test1 from "../assets/thumbnails/prototype/img1.png";
+import w1 from "../assets/thumbnails/prototype/w1.png";
+import w2 from "../assets/thumbnails/prototype/w2.png";
+import w3 from "../assets/thumbnails/prototype/w3.png";
+import w4 from "../assets/thumbnails/prototype/w4.png";
+import f1 from "../assets/thumbnails/prototype/f1.png";
+import f2 from "../assets/thumbnails/prototype/f2.png";
+import f3 from "../assets/thumbnails/prototype/f3.png";
+import f4 from "../assets/thumbnails/prototype/f4.png";
+import mockup from "../assets/thumbnails/prototype/ff1.png";
 import workstation2 from "../assets/wwrkst2.jpg";
-export const ProjectProvider = createContext();
+import color from "../assets/thumbnails/prototype/colors.png";
 
+export const ProjectProvider = createContext();
 function ProjectsContext(props) {
   const [work, setWork] = useState(null);
   const projects = [
     {
       id: 1,
+      type: null,
       category: "React",
-      title: "APP NAME",
-      description: "Movie Review Website",
+      title: "KASHMI",
+      description: "Online banking App",
       inspiration:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sequi necessitatibus quae blanditiis nemo ratione officiis, enim saepe. Eligendi velit odio eum eveniet esse minima consequatur omnis unde vel magni",
+        "UiUx Case Study: Experience money transactions like never before with Kashmi App! Keep track of your spending and make online purchases with ease - all in one secure and unique design!",
       projectImage: test1,
-
-      link: "#",
-      figmaDesignLink: "#",
-
-      designProcess: null,
-      projectTimeLine: null,
-      userResearch: null,
       userReview: [
         {
           name: "John Doe",
@@ -43,10 +47,16 @@ function ProjectsContext(props) {
       ],
       userFlow: null,
       sketches: null,
-      wireFrame: null,
-      finalDesign: null,
+      wireFrame: [w1, w2, w3, w4],
+      finalDesign: [f1, f2, f3, f4],
+      mockupdesign: mockup,
+      color: color,
       liveLink: null,
-      color: null,
+      figmaDesignLink:
+        "https://www.figma.com/file/pjMsRm6ogwdA8YKUKFK3Vn/KasshMi?node-id=0%3A1&t=Mt3E36Q1RH2yYmXp-0",
+      designProcess: null,
+      projectTimeLine: null,
+      userResearch: null,
     },
   ];
   return (

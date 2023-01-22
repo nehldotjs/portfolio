@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { ProjectProvider } from "../../context/ProjectsContext";
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaFigma, FaLink } from "react-icons/fa";
 import "./caseStudy.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +14,7 @@ function CaseStudy() {
   return (
     <div className="caseStudyScreen">
       <div className="goBackBtn">
-        <Link to="/nehl" className="goBackLinkBtn">
+        <Link to="/nehl#services" className="goBackLinkBtn">
           <FaHome className="linkIcon" />
         </Link>
         {work?.title && (
@@ -28,7 +28,7 @@ function CaseStudy() {
       <div className="studyWrapper">
         {work?.projectImage && (
           <div
-            data-aos="slide-down"
+            data-aos="fade-down"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
@@ -40,16 +40,16 @@ function CaseStudy() {
         {work?.designProcess && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
               className="projectDesignProcess projectBorder">
               <h5>Design Process</h5>
               <div className="projectOverviewWrapper proj">
-                {work?.designProcess.map((item) => {
+                {work?.designProcess.map((item, index) => {
                   const { img } = item;
-                  return <>{img}</>;
+                  return <div key={index}>{img}</div>;
                 })}
               </div>
             </div>
@@ -71,7 +71,7 @@ function CaseStudy() {
         {work?.userResearch && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
@@ -111,7 +111,7 @@ function CaseStudy() {
                       </div>
 
                       <div
-                        data-aos="slide-right"
+                        data-aos="fade-right"
                         data-aos-offset="200"
                         data-aos-easing="ease-in-out"
                         data-aos-once="false"
@@ -122,7 +122,7 @@ function CaseStudy() {
                           <li>{fasutration}</li>
                         </div>
                         <div
-                          data-aos="slide-up"
+                          data-aos="fade-right"
                           data-aos-offset="200"
                           data-aos-easing="ease-in-out"
                           data-aos-once="false"
@@ -142,7 +142,7 @@ function CaseStudy() {
         {work?.inspiration && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
@@ -157,7 +157,7 @@ function CaseStudy() {
         {work?.userFlow && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
@@ -167,15 +167,11 @@ function CaseStudy() {
             </div>
           </>
         )}
-        <>
-          <h4>Style Guide</h4>
-          <hr className="projectHr" />
-        </>
 
         {work?.sketches && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
@@ -185,49 +181,22 @@ function CaseStudy() {
             </div>
           </>
         )}
-        {work?.wireframe && (
+
+        {work?.wireFrame && (
           <>
             <div
-              data-aos="slide-right"
+              data-aos="fade-right"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-once="false"
               className="wireFrames projectBorder">
-              <h5>WireFrames</h5>
-              <div className="projectOverviewWrapper proj"></div>
-            </div>
-          </>
-        )}
-
-        {work?.color && (
-          <>
-            <div
-              data-aos="slide-right"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false"
-              className="projectsColor projectBorder">
-              <h5>Color</h5>
-              <div className="projectOverviewWrapper proj"></div>
-            </div>
-          </>
-        )}
-        {work?.finalDesign && (
-          <>
-            <div
-              data-aos="slide-right"
-              data-aos-offset="200"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false"
-              className="projectFinalDesigns projectBorder">
-              <h5>Final Design</h5>
+              <h5>Wire Frame</h5>
               <div className="projectOverviewWrapper proj">
-                <div className="finalDesignWrapper">
-                  {work?.finalDesign.map((item) => {
-                    const { img } = item;
+                <div className="case-imgeWrapper">
+                  {work?.wireFrame.map((x, index) => {
                     return (
-                      <div className="finalDesignWrapper-img">
-                        <img src={img} alt="project" />
+                      <div className="case-image" key={index}>
+                        <img src={x} alt="design" />
                       </div>
                     );
                   })}
@@ -236,14 +205,104 @@ function CaseStudy() {
             </div>
           </>
         )}
+
+        {work?.color && (
+          <>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+              className="projectsColor projectBorder">
+              <h5>Color</h5>
+              <div className="projectOverviewWrapper proj">
+                {
+                  <div className="coloImageW">
+                    <img src={work?.color} alt="color pallette" />
+                  </div>
+                }
+              </div>
+            </div>
+          </>
+        )}
+
         {work?.finalDesign && (
+          <>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+              className="wireFrames projectBorder">
+              <h5>Final Design</h5>
+              <div className="projectOverviewWrapper proj">
+                <div className="case-imgeWrapper">
+                  {work?.finalDesign.map((x, index) => {
+                    return (
+                      <div className="case-image" key={index}>
+                        <img src={x} alt="design" />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+        {work?.mockupdesign && (
+          <>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+              className=" projectBorder">
+              <h5>Mock Design</h5>
+              <div className="projectOverviewWrapper proj">
+                <div className="case-mockupimage">
+                  {/* {work?.mockupdesign.map((x, index) => {
+                    return (
+                      <div className="mockupimage" key={index}>
+                        <img src={x} className="mockup" alt="design" />
+                      </div>
+                    );
+                  })} */}
+
+                  <div className="mockupimage">
+                    <img
+                      src={work?.mockupdesign}
+                      className="mockup"
+                      alt="mockup design"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
+        {work?.figmaDesignLink && (
           <div
-            data-aos="slide-right"
+            data-aos="fade-right"
             data-aos-offset="200"
             data-aos-easing="ease-in-out"
             data-aos-once="false"
             className="projectLink projectBorder">
-            <h5>Link</h5>
+            <Link to={work?.figmaDesignLink} className="link">
+              <FaFigma className="linksIcon" />
+            </Link>
+          </div>
+        )}
+        {work?.liveLink && (
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+            className="projectLink projectBorder">
+            <Link to={work?.liveLink}>
+              <FaLink className="linksIcon" />
+            </Link>
           </div>
         )}
       </div>
